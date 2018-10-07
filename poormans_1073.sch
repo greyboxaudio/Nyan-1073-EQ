@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Poor Man's 1073"
 Date "2018-10-07"
-Rev "02"
+Rev "03"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -458,7 +458,7 @@ F 3 "~" H 2750 5850 50  0001 C CNN
 $EndComp
 Text Notes 3850 6850 0    50   ~ 0
 B205
-Text Notes 7700 5350 0    50   ~ 0
+Text Notes 7700 5400 0    50   ~ 0
 BA211
 Text Notes 10400 6450 0    50   ~ 0
 B182C
@@ -487,17 +487,6 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 5450
 	1    5550 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Amplifier_Operational:TL074 U3
-U 1 1 5BB9F86F
-P 9900 5750
-F 0 "U3" H 9900 6117 50  0000 C CNN
-F 1 "TL074" H 9900 6026 50  0000 C CNN
-F 2 "" H 9850 5850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9950 5950 50  0001 C CNN
-	1    9900 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9350 5250 10200 5250
 Wire Wire Line
@@ -510,11 +499,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 5250 9350 5100
 Connection ~ 9350 5250
-Wire Wire Line
-	10200 5550 10200 5750
-Connection ~ 10200 5750
-Wire Wire Line
-	10200 5750 10200 6050
 Wire Wire Line
 	9000 4250 9000 4600
 $Comp
@@ -635,22 +619,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6800 2650 50  0001 C CNN
 	2    6800 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Amplifier_Operational:TL072 U2
-U 1 1 5BC17663
-P 7250 4300
-F 0 "U2" H 7250 4667 50  0000 C CNN
-F 1 "TL072" H 7250 4576 50  0000 C CNN
-F 2 "" H 7250 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7250 4300 50  0001 C CNN
-	1    7250 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4100 7550 4300
-Connection ~ 7550 4300
-Wire Wire Line
-	7550 4300 7550 4600
 Wire Wire Line
 	5150 2950 5150 3800
 Connection ~ 6700 3800
@@ -886,12 +854,6 @@ Wire Notes Line
 	6550 3450 6550 4850
 Wire Notes Line
 	4700 1850 8000 1850
-Wire Notes Line
-	4700 5400 8000 5400
-Wire Notes Line
-	4700 1850 4700 5400
-Wire Notes Line
-	8000 1850 8000 5400
 Wire Wire Line
 	1700 3950 1700 4000
 Wire Wire Line
@@ -1113,4 +1075,89 @@ F 3 "" H 1150 4250 50  0001 C CNN
 	1    1150 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Graphic:SYM_Arrow_Small #SYM?
+U 1 1 5BBA71CF
+P 2300 3800
+F 0 "#SYM?" H 2300 3860 50  0001 C CNN
+F 1 "SYM_Arrow_Small" H 2310 3750 50  0001 C CNN
+F 2 "" H 2300 3800 50  0001 C CNN
+F 3 "~" H 2300 3800 50  0001 C CNN
+	1    2300 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Small #SYM?
+U 1 1 5BBAA7EA
+P 2300 1900
+F 0 "#SYM?" H 2300 1960 50  0001 C CNN
+F 1 "SYM_Arrow_Small" H 2310 1850 50  0001 C CNN
+F 2 "" H 2300 1900 50  0001 C CNN
+F 3 "~" H 2300 1900 50  0001 C CNN
+	1    2300 1900
+	-1   0    0    1   
+$EndComp
+Text Notes 2050 7400 0    50   ~ 0
+C12,C13\n 35Hz - 100nF + 100nF in parallel\n 60Hz - 100nF\n110Hz -  47nF\n220Hz -  15nF
+Wire Wire Line
+	7550 4100 7550 4300
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 1 1 5BBB64C6
+P 7250 4300
+F 0 "U?" H 7250 4667 50  0000 C CNN
+F 1 "NE5532" H 7250 4576 50  0000 C CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 4300
+Wire Wire Line
+	7550 4300 7550 4600
+Wire Wire Line
+	10200 5550 10200 5750
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 1 1 5BBB6818
+P 9900 5750
+F 0 "U?" H 9900 6117 50  0000 C CNN
+F 1 "NE5532" H 9900 6026 50  0000 C CNN
+F 2 "" H 9900 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 9900 5750 50  0001 C CNN
+	1    9900 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10200 5750
+Wire Wire Line
+	10200 5750 10200 6050
+Text Notes 4700 6150 0    50   ~ 0
+C6\n0,36kHz - 100nF\n 0,7kHz - 47nF\n 1,6kHz - 22nF\n 3,2kHz - 10nF + 2200pF in parallel\n 4,8kHz - 4700pF\n 7,2kHz - 2200pf + 220pF in parallel
+Text Notes 4700 7150 0    50   ~ 0
+R14\n0,36kHz - 243,9k\n 0,7kHz - 196k\n 1,6kHz - 124,7k\n3,2kHz ; 4,8kHz ; 7,2kHz - 60,7k
+Text Notes 4700 6650 0    50   ~ 0
+R16\n0,36kHz - 82r\n 0,7kHz - 56r\n 1,6kHz - 36r\n 3,2kHz ; 4,8kHz ; 7,2kHz - 33r
+$Comp
+L Graphic:SYM_Arrow_Small #SYM?
+U 1 1 5BBC1972
+P 5150 5400
+F 0 "#SYM?" H 5150 5460 50  0001 C CNN
+F 1 "SYM_Arrow_Small" H 5160 5350 50  0001 C CNN
+F 2 "" H 5150 5400 50  0001 C CNN
+F 3 "~" H 5150 5400 50  0001 C CNN
+	1    5150 5400
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	8000 5450 4700 5450
+Wire Notes Line
+	4700 1850 4700 5450
+Wire Notes Line
+	8000 1850 8000 5450
+Text Notes 6800 6350 0    50   ~ 0
+R19\n50Hz - 1k\n80Hz - 820r\n160Hz - 470r\n300Hz - 300r
+Text Notes 7550 6350 0    50   ~ 0
+R18\n50Hz - 100k\n80Hz - 85,3k\n160Hz - 63,8k\n300Hz - 43k
+Text Notes 6800 5900 0    50   ~ 0
+C9,C11\n 50Hz - 1,0uF\n 80Hz - 0,47uF\n160Hz - 0,22uF\n300Hz - 0,1uF + 0,022uF in parallel
 $EndSCHEMATC
