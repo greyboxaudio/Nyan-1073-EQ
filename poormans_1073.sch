@@ -1076,10 +1076,10 @@ F 3 "" H 1150 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:SYM_Arrow_Small #SYM?
+L Graphic:SYM_Arrow_Small #SYM2
 U 1 1 5BBA71CF
 P 2300 3800
-F 0 "#SYM?" H 2300 3860 50  0001 C CNN
+F 0 "#SYM2" H 2300 3860 50  0001 C CNN
 F 1 "SYM_Arrow_Small" H 2310 3750 50  0001 C CNN
 F 2 "" H 2300 3800 50  0001 C CNN
 F 3 "~" H 2300 3800 50  0001 C CNN
@@ -1087,10 +1087,10 @@ F 3 "~" H 2300 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Graphic:SYM_Arrow_Small #SYM?
+L Graphic:SYM_Arrow_Small #SYM1
 U 1 1 5BBAA7EA
 P 2300 1900
-F 0 "#SYM?" H 2300 1960 50  0001 C CNN
+F 0 "#SYM1" H 2300 1960 50  0001 C CNN
 F 1 "SYM_Arrow_Small" H 2310 1850 50  0001 C CNN
 F 2 "" H 2300 1900 50  0001 C CNN
 F 3 "~" H 2300 1900 50  0001 C CNN
@@ -1102,10 +1102,10 @@ C12,C13\n 35Hz - 100nF + 100nF in parallel\n 60Hz - 100nF\n110Hz -  47nF\n220Hz 
 Wire Wire Line
 	7550 4100 7550 4300
 $Comp
-L Amplifier_Operational:NE5532 U?
+L Amplifier_Operational:NE5532 U2
 U 1 1 5BBB64C6
 P 7250 4300
-F 0 "U?" H 7250 4667 50  0000 C CNN
+F 0 "U2" H 7250 4667 50  0000 C CNN
 F 1 "NE5532" H 7250 4576 50  0000 C CNN
 F 2 "" H 7250 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 7250 4300 50  0001 C CNN
@@ -1118,10 +1118,10 @@ Wire Wire Line
 Wire Wire Line
 	10200 5550 10200 5750
 $Comp
-L Amplifier_Operational:NE5532 U?
+L Amplifier_Operational:NE5532 U3
 U 1 1 5BBB6818
 P 9900 5750
-F 0 "U?" H 9900 6117 50  0000 C CNN
+F 0 "U3" H 9900 6117 50  0000 C CNN
 F 1 "NE5532" H 9900 6026 50  0000 C CNN
 F 2 "" H 9900 5750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 9900 5750 50  0001 C CNN
@@ -1138,10 +1138,10 @@ R14\n0,36kHz - 243,9k\n 0,7kHz - 196k\n 1,6kHz - 124,7k\n3,2kHz ; 4,8kHz ; 7,2kH
 Text Notes 4700 6650 0    50   ~ 0
 R16\n0,36kHz - 82r\n 0,7kHz - 56r\n 1,6kHz - 36r\n 3,2kHz ; 4,8kHz ; 7,2kHz - 33r
 $Comp
-L Graphic:SYM_Arrow_Small #SYM?
+L Graphic:SYM_Arrow_Small #SYM3
 U 1 1 5BBC1972
 P 5150 5400
-F 0 "#SYM?" H 5150 5460 50  0001 C CNN
+F 0 "#SYM3" H 5150 5460 50  0001 C CNN
 F 1 "SYM_Arrow_Small" H 5160 5350 50  0001 C CNN
 F 2 "" H 5150 5400 50  0001 C CNN
 F 3 "~" H 5150 5400 50  0001 C CNN

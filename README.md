@@ -15,12 +15,12 @@ All measurements so far have been made on my breadboard, with unbalanced connect
 ## Random notes
 
 *	I assume that you already have a suitable power supply for this circuit. As I'm mostly playing around with Eurorack stuff, I've been using this design for a linear regulated +/-12v PSU: http://electro-music.com/forum/post-389344.html
-* I’ve indicated which parts of the circuit correspond with the original 1073
+* I’ve indicated which parts of the circuit correspond to the original 1073
 *	To save space, only one example of each filter frequency has been drawn out
-*	I won’t link to any original 1073 schematics as they are easy enough to find, if you search for “1073 1084 user manual issue5”
+*	I won’t link to any original 1073 schematics, as they are easy enough to find if you search for “1073 1084 user manual issue5”
 * The BA211 board caused me quite a headache, until I finally figured out, that the original circuit only uses the 200mH tap of the T1280 inductor.
 * The two amplifiers on the BA284 board, that are used for the EQ circuits, function as basic inverting Op-Amps (see https://repforums.prosoundweb.com/index.php/topic,34458.html#msg509550)
-* In my tests I got better results (at line livel) by using the NE5532 Opamp for the amplifiers, as well as for the gyrator circuits.
+* In my tests I got better results (lower noise at line level), by using the NE5532 Opamp for the amplifiers, as well as for the gyrator circuits.
 * The presence band shows lower maximum gain at higher frequencies. This effect is a characteristic of the original circuit (see http://www.uaudio.com/webzine/2006/may/text/content2.html)
 
 ## References

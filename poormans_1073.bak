@@ -1097,7 +1097,7 @@ F 3 "~" H 2300 1900 50  0001 C CNN
 	1    2300 1900
 	-1   0    0    1   
 $EndComp
-Text Notes 2050 6850 0    50   ~ 0
+Text Notes 2050 7400 0    50   ~ 0
 C12,C13\n 35Hz - 100nF + 100nF in parallel\n 60Hz - 100nF\n110Hz -  47nF\n220Hz -  15nF
 Wire Wire Line
 	7550 4100 7550 4300
@@ -1131,11 +1131,11 @@ $EndComp
 Connection ~ 10200 5750
 Wire Wire Line
 	10200 5750 10200 6050
-Text Notes 4450 6150 0    50   ~ 0
+Text Notes 4700 6150 0    50   ~ 0
 C6\n0,36kHz - 100nF\n 0,7kHz - 47nF\n 1,6kHz - 22nF\n 3,2kHz - 10nF + 2200pF in parallel\n 4,8kHz - 4700pF\n 7,2kHz - 2200pf + 220pF in parallel
-Text Notes 4450 7150 0    50   ~ 0
+Text Notes 4700 7150 0    50   ~ 0
 R14\n0,36kHz - 243,9k\n 0,7kHz - 196k\n 1,6kHz - 124,7k\n3,2kHz ; 4,8kHz ; 7,2kHz - 60,7k
-Text Notes 4450 6650 0    50   ~ 0
+Text Notes 4700 6650 0    50   ~ 0
 R16\n0,36kHz - 82r\n 0,7kHz - 56r\n 1,6kHz - 36r\n 3,2kHz ; 4,8kHz ; 7,2kHz - 33r
 $Comp
 L Graphic:SYM_Arrow_Small #SYM?
