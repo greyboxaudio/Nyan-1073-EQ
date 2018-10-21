@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:poormans_1073-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 1 4
 Title "Poor Man's 1073"
 Date "2018-10-07"
-Rev "04"
+Rev "04a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
