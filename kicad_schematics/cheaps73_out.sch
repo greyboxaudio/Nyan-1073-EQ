@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+LIBS:cheaps73-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:NE5532 U6
+U 2 1 5BD6DA76
+P 5600 3400
+F 0 "U6" H 5600 3767 50  0000 C CNN
+F 1 "NE5532" H 5600 3676 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 5600 3400 50  0001 C CNN
+	2    5600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5BD6DAD1
+P 5300 4350
+F 0 "#PWR012" H 5300 4100 50  0001 C CNN
+F 1 "GND" H 5305 4177 50  0000 C CNN
+F 2 "" H 5300 4350 50  0001 C CNN
+F 3 "" H 5300 4350 50  0001 C CNN
+	1    5300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5BD6DAE5
+P 4800 3850
+F 0 "#PWR011" H 4800 3600 50  0001 C CNN
+F 1 "GND" H 4805 3677 50  0000 C CNN
+F 2 "" H 4800 3850 50  0001 C CNN
+F 3 "" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R64
+U 1 1 5BD6DB29
+P 6350 3400
+F 0 "R64" V 6143 3400 50  0000 C CNN
+F 1 "100R" V 6234 3400 50  0000 C CNN
+F 2 "" V 6280 3400 50  0001 C CNN
+F 3 "~" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 5BD6DC00
+P 4800 3550
+F 0 "R61" H 4730 3504 50  0000 R CNN
+F 1 "5K1" H 4730 3595 50  0000 R CNN
+F 2 "" V 4730 3550 50  0001 C CNN
+F 3 "~" H 4800 3550 50  0001 C CNN
+	1    4800 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 5BD6DC20
+P 5550 3850
+F 0 "R63" V 5343 3850 50  0000 C CNN
+F 1 "6K2" V 5434 3850 50  0000 C CNN
+F 2 "" V 5480 3850 50  0001 C CNN
+F 3 "~" H 5550 3850 50  0001 C CNN
+	1    5550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 5BD6DC3E
+P 5300 4100
+F 0 "R62" H 5230 4054 50  0000 R CNN
+F 1 "10K" H 5230 4145 50  0000 R CNN
+F 2 "" V 5230 4100 50  0001 C CNN
+F 3 "~" H 5300 4100 50  0001 C CNN
+	1    5300 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 3400 5900 3850
+Wire Wire Line
+	5900 3850 5700 3850
+Wire Wire Line
+	5400 3850 5300 3850
+Wire Wire Line
+	5300 3850 5300 3500
+Wire Wire Line
+	5300 3850 5300 3950
+Connection ~ 5300 3850
+Wire Wire Line
+	5300 4250 5300 4350
+Wire Wire Line
+	5900 3400 6200 3400
+Connection ~ 5900 3400
+Wire Wire Line
+	6500 3400 6800 3400
+Wire Wire Line
+	4500 3300 4800 3300
+Wire Wire Line
+	4800 3400 4800 3300
+Connection ~ 4800 3300
+Wire Wire Line
+	4800 3300 5300 3300
+Wire Wire Line
+	4800 3850 4800 3700
+Text HLabel 6800 3400 2    50   Output ~ 0
+OUT
+Text HLabel 4500 3300 0    50   Input ~ 0
+IN
+$EndSCHEMATC
