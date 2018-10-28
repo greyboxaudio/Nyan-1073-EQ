@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cheaps73-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 2 6
 Title "Cheap's 73"
 Date "2018-10-28"
-Rev "06"
+Rev "06a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -704,8 +703,6 @@ Text HLabel 4500 2300 0    50   Input ~ 0
 IN
 Text HLabel 8700 2300 2    50   Output ~ 0
 OUT
-Text Notes 650  650  0    50   ~ 0
-B205
 Text Notes 4350 6300 0    50   ~ 0
 60Hz
 Text Notes 4000 6200 0    50   ~ 0

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cheaps73-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 4 6
 Title "Cheap's 73"
 Date "2018-10-28"
-Rev "06"
+Rev "06a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -96,8 +95,6 @@ F 3 "~" H 5700 5100 50  0001 C CNN
 	1    5700 5100
 	1    0    0    -1  
 $EndComp
-Text Notes 600  650  0    50   ~ 0
-B182C
 Wire Wire Line
 	5700 4400 6550 4400
 Wire Wire Line
@@ -841,12 +838,12 @@ Wire Wire Line
 	5150 3550 5900 3550
 Connection ~ 5150 3550
 Wire Wire Line
-	5150 3550 5150 4250
+	5150 3550 5150 3900
 Wire Wire Line
 	6200 3550 6650 3550
 Connection ~ 6650 3550
 Wire Wire Line
-	6650 3550 6650 4250
+	6650 3550 6650 3900
 Wire Wire Line
 	2050 3050 2050 3450
 Wire Wire Line
@@ -881,4 +878,27 @@ Wire Wire Line
 	6250 1400 6250 1250
 Wire Wire Line
 	6850 750  8100 750 
+$Comp
+L Device:R R?
+U 1 1 5BD7488F
+P 6050 3900
+AR Path="/5BD7488F" Ref="R?"  Part="1" 
+AR Path="/5BD673F0/5BD7488F" Ref="R65"  Part="1" 
+F 0 "R65" V 6257 3900 50  0000 C CNN
+F 1 "10K" V 6166 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5980 3900 50  0001 C CNN
+F 3 "~" H 6050 3900 50  0001 C CNN
+	1    6050 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3900 6650 3900
+Connection ~ 6650 3900
+Wire Wire Line
+	6650 3900 6650 4250
+Connection ~ 5150 3900
+Wire Wire Line
+	5150 3900 5150 4250
+Wire Wire Line
+	5150 3900 5900 3900
 $EndSCHEMATC

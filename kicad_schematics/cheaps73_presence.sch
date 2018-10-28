@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cheaps73-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 3 6
 Title "Cheap's 73"
 Date "2018-10-28"
-Rev "06"
+Rev "06a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -129,7 +128,7 @@ P 2000 1750
 AR Path="/5BD66715" Ref="R?"  Part="1" 
 AR Path="/5BD651BC/5BD66715" Ref="R18"  Part="1" 
 F 0 "R18" H 2070 1796 50  0000 L CNN
-F 1 "2k2" H 2070 1705 50  0000 L CNN
+F 1 "2k7" H 2070 1705 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1930 1750 50  0001 C CNN
 F 3 "~" H 2000 1750 50  0001 C CNN
 	1    2000 1750
@@ -149,8 +148,6 @@ Connection ~ 3000 1900
 Wire Wire Line
 	3000 1900 3000 2100
 Connection ~ 3800 1600
-Text Notes 550  650  0    50   ~ 0
-BA211
 Text Notes 3350 2250 0    50   ~ 0
 BA284, K -> M
 $Comp

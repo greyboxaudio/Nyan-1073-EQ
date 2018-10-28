@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cheaps73-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 1 6
 Title "Cheap's 73"
 Date "2018-10-28"
-Rev "06"
+Rev "06a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -35,7 +34,7 @@ $EndSheet
 $Sheet
 S 7150 3250 1300 550 
 U 5BD673F0
-F0 "High Pass Filter (B182)" 50
+F0 "High Pass Filter (B182C)" 50
 F1 "cheaps73_hp.sch" 50
 F2 "OUT" O R 8450 3550 50 
 F3 "IN" I L 7150 3550 50 
