@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "Cheap's 73"
-Date "2018-10-31"
-Rev "06b"
+Date "2018-11-01"
+Rev "06c"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
