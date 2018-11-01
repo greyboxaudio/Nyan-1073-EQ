@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 5 6
 Title "Cheap's 73"
 Date "2018-11-01"
-Rev "06c"
+Rev "06d"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
