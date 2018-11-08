@@ -6,25 +6,14 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title "Cheap's 73"
-Date "2018-11-01"
-Rev "06d"
+Date "2018-11-08"
+Rev "07"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Amplifier_Operational:NE5532 U1
-U 1 1 5BC8D41D
-P 6200 1100
-F 0 "U1" H 6200 1467 50  0000 C CNN
-F 1 "NE5532" H 6200 1376 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 6200 1100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6200 1100 50  0001 C CNN
-	1    6200 1100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C11
 U 1 1 5BC8D424
@@ -57,7 +46,6 @@ Wire Wire Line
 	6500 1650 6500 1100
 Wire Wire Line
 	6500 1100 6650 1100
-Connection ~ 6500 1100
 $Comp
 L Device:R_POT RV1
 U 1 1 5BC8D438
@@ -243,23 +231,23 @@ BA284, C -> E
 $Comp
 L Switch:SW_Rotary3x4 SW1
 U 1 1 5BC8D4B6
-P 6400 4650
-F 0 "SW1" V 6404 5403 50  0000 L CNN
-F 1 "SW_Rotary3x4" V 6495 5403 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6300 5450 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 6300 5450 50  0001 C CNN
-	1    6400 4650
+P 5900 4650
+F 0 "SW1" V 5904 5403 50  0000 L CNN
+F 1 "SW_Rotary3x4" V 5995 5403 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 5800 5450 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 5800 5450 50  0001 C CNN
+	1    5900 4650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6150 3100 6150 3200
 Wire Wire Line
 	7300 3600 7300 2750
-NoConn ~ 6800 5150
-NoConn ~ 6900 5150
-NoConn ~ 7000 5150
-NoConn ~ 7100 5150
-NoConn ~ 6900 4250
+NoConn ~ 5300 5150
+NoConn ~ 5400 5150
+NoConn ~ 5500 5150
+NoConn ~ 5600 5150
+NoConn ~ 5400 4250
 Wire Wire Line
 	4500 2300 5000 2300
 Wire Wire Line
@@ -710,4 +698,16 @@ Text Notes 4000 6200 0    50   ~ 0
 110Hz
 Text Notes 3650 6100 0    50   ~ 0
 220Hz
+$Comp
+L Amplifier_Operational:LM4562 U1
+U 1 1 5BE584AB
+P 6200 1100
+F 0 "U1" H 6200 1467 50  0000 C CNN
+F 1 "LM4562" H 6200 1376 50  0000 C CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4562.pdf" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 1100
 $EndSCHEMATC

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
 Title "Cheap's 73"
-Date "2018-11-01"
-Rev "06d"
+Date "2018-11-08"
+Rev "07"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -843,13 +843,13 @@ Wire Wire Line
 Connection ~ 2050 4000
 Wire Wire Line
 	2050 4000 2050 4400
-Text Notes 6100 6500 0    50   ~ 0
+Text Notes 6200 5950 0    50   ~ 0
 50Hz
-Text Notes 4600 6500 0    50   ~ 0
+Text Notes 4700 5950 0    50   ~ 0
 80Hz
-Text Notes 2950 6500 0    50   ~ 0
+Text Notes 3100 5950 0    50   ~ 0
 160Hz
-Text Notes 1450 6500 0    50   ~ 0
+Text Notes 1550 5950 0    50   ~ 0
 300Hz
 $Comp
 L Device:R R?
