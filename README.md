@@ -22,7 +22,7 @@ As there are no potentiometers in LTSpice, I used serial resistors instead. So i
 
 ## References
 
-*	The following article from Rod Elliott has been very helpful in understanding and implementing gyrators http://sound.whsites.net/articles/gyrator-filters.htm
+*	The following article from Rod Elliott has been very helpful in understanding and implementing gyrators http://sound-au.com/articles/gyrator-filters.htm
 *	The inductance and resistance values for the different inductors have been taken from here http://www.sowter.co.uk/eqinductors.php
 *	I’ve used the Waves Scheps 73 plugin as my main reference for the frequency response https://www.waves.com/plugins/scheps-73
 *	DDMF’s Plugindoctor has been a great tool for measuring and referencing my circuit with the plugin https://ddmf.eu/plugindoctor/
