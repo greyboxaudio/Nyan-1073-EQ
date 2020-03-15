@@ -1,4 +1,4 @@
-# Cheap's 73
+# NYAN 1073 (Not Yet Another Neve Clone)
 
 Inspired by the Poor Man's Pultec (https://groupdiy.com/index.php?topic=43859.0) this is my take on the classic 1073 Equalizer.
 The main goal of this project is to give people an affordable option for building this EQ. This is achieved by replacing all inductors with gyrators aka 'simulated inductors'.
@@ -27,6 +27,10 @@ As there are no potentiometers in LTSpice, I used serial resistors instead. So i
 *	I’ve used the Waves Scheps 73 plugin as my main reference for the frequency response https://www.waves.com/plugins/scheps-73
 *	DDMF’s Plugindoctor has been a great tool for measuring and referencing my circuit with the plugin https://ddmf.eu/plugindoctor/
 * Special thanks goes out to gearslutz user Cabirio, who helped a lot in optimizing the circuit 
+
+## Disclaimer
+Neve is a registered trademark of AMS/Neve Inc.
+This project is not affiliated, endorsed or supported by AMS/Neve in any manner.
 
 ## License
 
