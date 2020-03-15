@@ -14,9 +14,9 @@ int analogPin2 = A1;
 int analogPin3 = A2;
 
 //individually calibrated center values for all potentiometers
-int offset1 = 528;
+int offset1 = 526;
 int offset2 = 504;
-int offset3 = 530;
+int offset3 = 535;
 
 const int numReadings = 6;
 int readIndex = 0;              // the index of the current reading
@@ -59,9 +59,9 @@ void setup() {
 
   // calculate individual gain modifiers
   gainMod1Pos = 1023 - offset1;
-  gainMod1Pos = 18 / gainMod1Pos;
+  gainMod1Pos = 16 / gainMod1Pos;
   gainMod1Neg = offset1;
-  gainMod1Neg = 18 / gainMod1Neg;
+  gainMod1Neg = 16 / gainMod1Neg;
 
   gainMod2Pos = 1023 - offset2;
   gainMod2Pos = 18 / gainMod2Pos;
@@ -69,9 +69,9 @@ void setup() {
   gainMod2Neg = 18 / gainMod2Neg;
 
   gainMod3Pos = 1023 - offset3;
-  gainMod3Pos = 18 / gainMod3Pos;
+  gainMod3Pos = 16 / gainMod3Pos;
   gainMod3Neg = offset3;
-  gainMod3Neg = 18 / gainMod3Neg;
+  gainMod3Neg = 16 / gainMod3Neg;
   
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
