@@ -1,4 +1,5 @@
-# NYAN 1073 (Not Yet Another Neve Clone)
+# NYAN 1073 
+(*Not Yet Another Neve)
 
 Inspired by the Poor Man's Pultec (https://groupdiy.com/index.php?topic=43859.0) this is my take on the classic 1073 Equalizer.
 The main goal of this project is to give people an affordable option for building this EQ. This is achieved by replacing all inductors with gyrators aka 'simulated inductors'.
