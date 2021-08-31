@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "TINyan73"
-Date "2021-02-01"
-Rev "09"
+Date "2021-02-02"
+Rev "09a"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -634,7 +634,7 @@ P 4850 6700
 AR Path="/5BD67714" Ref="C40"  Part="1" 
 AR Path="/5BD673F0/5BD67714" Ref="C?"  Part="1" 
 F 0 "C40" H 4965 6746 50  0000 L CNN
-F 1 "100nF" H 4965 6655 50  0000 L CNN
+F 1 "10nF" H 4965 6655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L10.0mm_W3.0mm_P7.50mm_MKS4" H 4888 6550 50  0001 C CNN
 F 3 "~" H 4850 6700 50  0001 C CNN
 	1    4850 6700
