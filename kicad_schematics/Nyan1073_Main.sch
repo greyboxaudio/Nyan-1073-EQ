@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "NYAN 1073 EQ"
-Date "2021-02-02"
-Rev "09a"
+Date "2021-08-31"
+Rev "10"
 Comp "Robert-André Vettel"
 Comment1 ""
 Comment2 ""
@@ -85,17 +85,6 @@ F 3 "~" H 1450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
-U 1 1 5BC8D44D
-P 2850 5600
-F 0 "R7" V 3057 5600 50  0000 C CNN
-F 1 "39k" V 2966 5600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2780 5600 50  0001 C CNN
-F 3 "~" H 2850 5600 50  0001 C CNN
-	1    2850 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5BC8D454
 P 4100 2050
@@ -131,13 +120,13 @@ $EndComp
 $Comp
 L Device:R R6
 U 1 1 5BC8D469
-P 2400 5600
-F 0 "R6" V 2607 5600 50  0000 C CNN
-F 1 "12k" V 2516 5600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 5600 50  0001 C CNN
-F 3 "~" H 2400 5600 50  0001 C CNN
-	1    2400 5600
-	0    -1   -1   0   
+P 3950 5750
+F 0 "R6" H 3880 5704 50  0000 R CNN
+F 1 "12k" H 3880 5795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3880 5750 50  0001 C CNN
+F 3 "~" H 3950 5750 50  0001 C CNN
+	1    3950 5750
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C3
@@ -227,12 +216,12 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5BC8D524
-P 2650 5750
-F 0 "#PWR01" H 2650 5500 50  0001 C CNN
-F 1 "GND" H 2655 5577 50  0000 C CNN
-F 2 "" H 2650 5750 50  0001 C CNN
-F 3 "" H 2650 5750 50  0001 C CNN
-	1    2650 5750
+P 3950 5900
+F 0 "#PWR01" H 3950 5650 50  0001 C CNN
+F 1 "GND" H 3955 5727 50  0000 C CNN
+F 2 "" H 3950 5900 50  0001 C CNN
+F 3 "" H 3950 5900 50  0001 C CNN
+	1    3950 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -564,21 +553,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 5100 3950 5100
 Wire Wire Line
-	2650 5750 2650 5600
-Wire Wire Line
-	2650 5600 2700 5600
-Wire Wire Line
-	2550 5600 2650 5600
-Connection ~ 2650 5600
-Wire Wire Line
 	3950 5600 3950 5100
-Wire Wire Line
-	3000 5600 3950 5600
 Connection ~ 3950 5100
 Wire Wire Line
 	3950 5100 4150 5100
-Wire Wire Line
-	1450 5600 2250 5600
 $Comp
 L Device:R_POT RV1
 U 1 1 5BC8D4A1
@@ -621,9 +599,6 @@ NoConn ~ 4950 4050
 NoConn ~ 4850 3150
 Wire Wire Line
 	1450 2700 3850 2700
-Connection ~ 1450 2700
-Wire Wire Line
-	1450 2700 1450 5600
 Wire Wire Line
 	1600 2350 3500 2350
 Wire Wire Line
@@ -2068,12 +2043,12 @@ $EndComp
 $Comp
 L Device:CP C29
 U 1 1 5BDD0F17
-P 9950 900
-F 0 "C29" V 10205 900 50  0000 C CNN
-F 1 "22uF" V 10114 900 50  0000 C CNN
-F 2 "" H 9988 750 50  0001 C CNN
-F 3 "~" H 9950 900 50  0001 C CNN
-	1    9950 900 
+P 10300 900
+F 0 "C29" V 10555 900 50  0000 C CNN
+F 1 "22uF" V 10464 900 50  0000 C CNN
+F 2 "" H 10338 750 50  0001 C CNN
+F 3 "~" H 10300 900 50  0001 C CNN
+	1    10300 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2340,32 +2315,6 @@ Wire Wire Line
 Connection ~ 14600 4250
 Wire Wire Line
 	14600 4250 14600 4350
-$Comp
-L Device:R R27
-U 1 1 6086963D
-P 10300 1050
-AR Path="/6086963D" Ref="R27"  Part="1" 
-AR Path="/5BD673F0/6086963D" Ref="R?"  Part="1" 
-F 0 "R27" H 10370 1096 50  0000 L CNN
-F 1 "39k" H 10370 1005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10230 1050 50  0001 C CNN
-F 3 "~" H 10300 1050 50  0001 C CNN
-	1    10300 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 60869B07
-P 10300 1200
-AR Path="/60869B07" Ref="#PWR07"  Part="1" 
-AR Path="/5BD673F0/60869B07" Ref="#PWR?"  Part="1" 
-F 0 "#PWR07" H 10300 950 50  0001 C CNN
-F 1 "GND" H 10305 1027 50  0000 C CNN
-F 2 "" H 10300 1200 50  0001 C CNN
-F 3 "" H 10300 1200 50  0001 C CNN
-	1    10300 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8700 1000 8550 1000
 Wire Wire Line
@@ -2378,9 +2327,8 @@ Wire Wire Line
 Wire Wire Line
 	9100 900  9550 900 
 Wire Wire Line
-	9800 900  9550 900 
+	10150 900  9550 900 
 Connection ~ 9550 900 
-Connection ~ 10300 900 
 Wire Wire Line
 	9550 1200 9100 1200
 Wire Wire Line
@@ -2394,10 +2342,6 @@ Wire Wire Line
 Wire Wire Line
 	10100 1200 10100 1900
 Connection ~ 9550 1200
-Wire Wire Line
-	10100 900  10300 900 
-Wire Wire Line
-	10300 900  11050 900 
 Connection ~ 11050 900 
 Wire Wire Line
 	11050 1200 10600 1200
@@ -2420,4 +2364,6 @@ Wire Wire Line
 Connection ~ 8000 6250
 Wire Wire Line
 	8000 6250 11550 6250
+Wire Wire Line
+	10450 900  11050 900 
 $EndSCHEMATC
