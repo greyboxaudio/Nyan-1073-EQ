@@ -9,9 +9,12 @@
 #define OLED_RESET     4 // Reset pin # (or -1 if sharing Arduino reset pin)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-int analogPin1 = A0;
-int analogPin2 = A1;
-int analogPin3 = A2;
+int analogPin1 = A0;  //Low Freq dB
+int analogPin2 = A1;  //Mid Freq dB
+int analogPin3 = A2;  //High Freq dB
+int analogPin4 = A3;  //HPF Freq Hz
+int analogPin5 = A6;  //Low Freq Hz
+int analogPin6 = A7;  //Mid Freq Hz
 
 //individually calibrated center values for all potentiometers
 int offset1 = 523; //High Frequency Center
@@ -21,8 +24,8 @@ int offset3 = 498; //Low Frequency Center
 //Zero display range
 int zeroDisplay = 2;
 
-const int numReadings = 6;
-int readIndex = 0;              // the index of the current reading
+const int numReadings = 7;
+int readIndex = 0;                 // the index of the current reading
 int readings_A0[numReadings];      // the readings from the analog input
 int total_A0 = 0;                  // the running total
 int average_A0 = 0;                // the average
@@ -32,6 +35,10 @@ int average_A1 = 0;                // the average
 int readings_A2[numReadings];      // the readings from the analog input
 int total_A2 = 0;                  // the running total
 int average_A2 = 0;                // the average
+
+int frequencyA = 0; // HPF Frequency Select
+int frequencyB = 0;
+int frequencyC = 0;
 
 float gainMod1Pos = 0;
 float gainMod1Neg = 0;
@@ -83,6 +90,7 @@ void setup() {
   display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
+  display.println();
   display.println(" NYAN 1073");
   display.println("   =^x^=");
   display.display();
@@ -117,32 +125,60 @@ void loop() {
   average_A1 = total_A1 / numReadings;
   average_A2 = total_A2 / numReadings;
 
+  frequencyB = analogRead(analogPin4);
+
   // serial output for debugging & calibration
   Serial.print(average_A0);
   Serial.print(" ");
   Serial.print(average_A1);
   Serial.print(" ");
-  Serial.println(average_A2);
+  Serial.print(average_A2);
+  Serial.print(" // ");
+  Serial.print(frequencyA);
+  Serial.print(" ");
+  Serial.print(frequencyB);
+  Serial.print(" ");
+  Serial.println(frequencyC);
 
-  
   display.clearDisplay();
   display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  
-  // calculate output1 in dB
-  if (average_A0 > offset1 + zeroDisplay){
-    out1 = (average_A0 - offset1)*gainMod1Pos;
-    display.println(out1);
+
+  display.print("12k:");
+  // calculate output3 in dB
+   if (average_A2 > offset3 + zeroDisplay){
+    out3 = (average_A2 - offset3)*gainMod3Pos;
+    display.println(out3);
   }
-  else if (average_A0 < offset1 - zeroDisplay){
-    out1 = (average_A0 - offset1)*gainMod1Neg;
-    display.println(out1);
+  else if (average_A2 < offset3 - zeroDisplay){
+    out3 = (average_A2 - offset3)*gainMod3Neg;
+    display.println(out3);
   }
   else{
     display.println(0.00);
   }
 
+
+  //display Mid Frequency
+    if (frequencyC < 250){
+    display.print("360:");
+   }
+   if (frequencyC > 250 & frequencyC < 350){
+    display.print("700 ");
+   }
+   if (frequencyC > 350 & frequencyC < 500){
+    display.print("1k6 ");
+   }
+   if (frequencyC > 500 & frequencyC < 700){
+    display.print("3k2 ");
+   }
+   if (frequencyC > 700 & frequencyC < 850){
+    display.print("4k8 ");
+   }
+   if (frequencyC > 850){
+    display.print("7k2 ");
+   }
   // calculate output2 in dB
   if (average_A1 > offset2 + zeroDisplay){
     out2 = (average_A1 - offset2)*gainMod2Pos;
@@ -156,18 +192,46 @@ void loop() {
     display.println(0.00);
   }
 
-  // calculate output3 in dB
-   if (average_A2 > offset3 + zeroDisplay){
-    out3 = (average_A2 - offset3)*gainMod3Pos;
-    display.println(out3);
+  //display Low Frequency
+    if (frequencyB < 300){
+    display.print("220:");
+   }
+   if (frequencyB > 300 & frequencyB < 500){
+    display.print("110:");
+   }
+   if (frequencyB > 500 & frequencyB < 700){
+    display.print(" 65:");
+   }
+   if (frequencyB > 700){
+    display.print(" 35:");
+   }
+  // calculate output1 in dB
+  if (average_A0 > offset1 + zeroDisplay){
+    out1 = (average_A0 - offset1)*gainMod1Pos;
+    display.println(out1);
   }
-  else if (average_A2 < offset3 - zeroDisplay){
-    out3 = (average_A2 - offset3)*gainMod3Neg;
-    display.println(out3);
+  else if (average_A0 < offset1 - zeroDisplay){
+    out1 = (average_A0 - offset1)*gainMod1Neg;
+    display.println(out1);
   }
   else{
     display.println(0.00);
   }
+
+  //display HPF Frequency
+    if (frequencyA < 300){
+    display.print(" 50:");
+   }
+   if (frequencyA > 300 & frequencyA < 500){
+    display.print(" 80:");
+   }
+   if (frequencyA > 500 & frequencyA < 700){
+    display.print("160:");
+   }
+   if (frequencyA > 700){
+    display.print("300:");
+   }
+   display.print("HPF");
 
   display.display();
   
